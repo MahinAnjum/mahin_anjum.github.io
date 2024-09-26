@@ -25,9 +25,46 @@ header p {
     font-size: 1.2em;
 }
 
+/* Profile Picture Section */
+.profile-picture {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-picture img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* About Me section */
+.about-me {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-me h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.about-me p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
 /* Education section */
 .education {
     padding: 20px;
+    background-color: #f4f4f4;
 }
 
 .education h2 {
