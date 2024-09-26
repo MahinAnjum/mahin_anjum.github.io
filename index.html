@@ -8,18 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Contact Information -->
-    <div class="contact-info">
-        <p><strong>Address:</strong> House No: 9/A, Circular Road, Kalabagan, Dhaka-1205</p>
-        <p><strong>Phone:</strong> 01974036789, 01601212792</p>
-        <p><strong>Email:</strong> <a href="mailto:1806017@eee.buet.ac.bd">1806017@eee.buet.ac.bd</a>, <a href="mailto:mahinanjum558@gmail.com">mahinanjum558@gmail.com</a></p>
-    </div>
 
     <!-- Navigation Bar -->
     <nav>
         <div class="container">
             <ul>
-                <li><a href="#about-me" class="nav-link" onclick="showSection('about')">About Me</a></li>
+                <li><a href="#" class="nav-link" onclick="showSection('about')">About Me</a></li>
                 <li><a href="#" class="nav-link" onclick="showSection('education')">Education</a></li>
                 <li><a href="#" class="nav-link" onclick="showSection('skills')">Skills</a></li>
                 <li><a href="#" class="nav-link" onclick="showSection('projects')">Projects</a></li>
@@ -28,61 +22,71 @@
         </div>
     </nav>
 
-    <!-- Sections -->
-    <div id="content">
-
-        <!-- About Me Section -->
-        <section id="about" class="container">
-            <header>
+    <!-- About Me Section -->
+    <section id="about" class="container">
+        <div class="about-me">
+            <div class="profile-section">
                 <div class="profile-picture">
                     <img src="Mahin_Anjum.jpg" alt="Mahin Anjum">
                 </div>
-                <h1>Mahin Anjum</h1>
-                <p>B.Sc. in Electrical & Electronic Engineering</p>
-            </header>
+                <div class="contact-info">
+                    <p><strong>Address:</strong> House No: 9/A, Circular Road, Kalabagan, Dhaka-1205</p>
+                    <p><strong>Phone:</strong> 01974036789, 01601212792</p>
+                    <p><strong>Email:</strong> <a href="mailto:1806017@eee.buet.ac.bd">1806017@eee.buet.ac.bd</a>, <a href="mailto:mahinanjum558@gmail.com">mahinanjum558@gmail.com</a></p>
+                </div>
+            </div>
+            <h1>Mahin Anjum</h1>
+            <p>B.Sc. in Electrical & Electronic Engineering</p>
 
             <h2>About Me</h2>
             <p>I am an undergraduate student at the Bangladesh University of Engineering and Technology (BUET), pursuing a degree in Electrical and Electronic Engineering with a major in Electronics. My primary interest lies in Electronic Circuit Design.</p>
+            <p>Currently, my research focuses on <strong>Advancements in MM-Wave LNA Design</strong>: optimizing performance through <strong>Modified DS and Post-Linearization Techniques at 26GHz</strong> under the supervision of <strong>Prof. Dr. Mahbub Alam</strong>.</p>
+            <p>My undergraduate thesis on <strong>MM-Wave Circuit Design</strong> was conducted under the guidance of <strong>Dr. Apratim Roy</strong>, Professor at BUET.</p>
+        </div>
+    </section>
 
-            <p>Currently, my research focuses on the <strong>Advancements in MM-Wave LNA Design</strong>: optimizing performance through <strong>Modified DS and Post-Linearization Techniques at 26GHz</strong>. This work is being carried out under the supervision of <strong>Prof. Dr. Mahbub Alam</strong>.</p>
+    <!-- Education Section -->
+    <section id="education" class="container hidden">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>B.Sc. in Electrical & Electronic Engineering</strong></li>
+            <p>Bangladesh University of Engineering & Technology (BUET)<br> 
+            2019-2024<br>CGPA: (To be updated)<br>Major: Electronics</p>
 
-            <p>I have conducted my undergraduate thesis on <strong>MM-Wave Circuit Design</strong> under the guidance of <strong>Dr. Apratim Roy</strong>, Professor at BUET.</p>
-        </section>
+            <li><strong>HSC: Notre Dame College, Dhaka</strong></li>
+            <p>GPA: 5.00 out of 5.00 (Talent-Pool Scholarship, 129th in Dhaka Board)<br>Group: Science</p>
 
-        <!-- Education Section -->
-        <section id="education" class="container hidden">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>B.Sc. in Electrical & Electronic Engineering</strong></li>
-                <p>Bangladesh University of Engineering & Technology (BUET)<br> 
-                2019-2024<br>CGPA: (To be updated)<br>Major: Electronics</p>
+            <li><strong>SSC: Panchagarh B.P. Govt. High School, Panchagarh</strong></li>
+            <p>GPA: 5.00 out of 5.00 (Talent-Pool Scholarship, 24th in Dinajpur Board)<br>Group: Science</p>
+        </ul>
+    </section>
 
-                <li><strong>HSC: Notre Dame College, Dhaka</strong></li>
-                <p>GPA: 5.00 out of 5.00 (Talent-Pool Scholarship, 129th in Dhaka Board)<br>Group: Science</p>
+    <!-- Skills Section -->
+    <section id="skills" class="container hidden">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Programming Languages:</strong> C, C++, Matlab, Python</li>
+            <li><strong>Frameworks and Libraries:</strong> Pandas, Numpy, Matplotlib, Keras, Tensorflow, Scikit-Learn, App Designer (Matlab)</li>
+            <li><strong>Simulation Software/Tools:</strong> Spice Circuit Simulator, CYME PSAF, Proteus, Cadence Virtuoso, Cadence NC-Sim, EDA Playground, Matlab Simulink</li>
+            <li><strong>Drafting Tool:</strong> Autocad 2007</li>
+            <li><strong>Computer Proficiency:</strong> MS Office, Windows OS</li>
+            <li><strong>Web Development:</strong> HTML 5</li>
+            <li><strong>Hardware & Embedded Systems:</strong> STM-32, FPGA Module, ATMEGA Microcontroller</li>
+            <li><strong>Language Proficiency:</strong> English, Bangla</li>
+        </ul>
+    </section>
 
-                <li><strong>SSC: Panchagarh B.P. Govt. High School, Panchagarh</strong></li>
-                <p>GPA: 5.00 out of 5.00 (Talent-Pool Scholarship, 24th in Dinajpur Board)<br>Group: Science</p>
-            </ul>
-        </section>
+    <!-- Projects Section -->
+    <section id="projects" class="container hidden">
+        <h2>Projects</h2>
+        <p>Placeholder for projects content. Showcase your projects here.</p>
+    </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="container hidden">
-            <h2>Skills</h2>
-            <p>Placeholder for skills content. Add your technical and soft skills here.</p>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="container hidden">
-            <h2>Projects</h2>
-            <p>Placeholder for projects content. Showcase your projects here.</p>
-        </section>
-
-        <!-- Thesis Section -->
-        <section id="thesis" class="container hidden">
-            <h2>Thesis</h2>
-            <p>Placeholder for thesis content. Add information about your thesis work and research here.</p>
-        </section>
-    </div>
+    <!-- Thesis Section -->
+    <section id="thesis" class="container hidden">
+        <h2>Thesis</h2>
+        <p>Placeholder for thesis content. Add information about your thesis work and research here.</p>
+    </section>
 
     <footer>
         <p>© 2024 Mahin Anjum</p>
