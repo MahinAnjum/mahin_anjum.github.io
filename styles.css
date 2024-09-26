@@ -13,6 +13,65 @@ body {
     padding-bottom: 80px; /* Space for footer */
 }
 
+/* Contact Information Styling */
+.contact-info {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    text-align: right;
+    font-size: 0.9em;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+.contact-info a {
+    color: #4A90E2;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #4A90E2;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
 /* Container for layout */
 .container {
     max-width: 1000px;
@@ -53,31 +112,8 @@ header p {
     margin-bottom: 20px;
 }
 
-/* About Me Section */
-.about-me {
-    background-color: white;
-    padding: 40px;
-    margin-top: -50px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.about-me h2 {
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 20px;
-    font-weight: 700;
-    color: #4A90E2;
-}
-
-.about-me p {
-    font-size: 1.1em;
-    line-height: 1.8;
-    margin-bottom: 15px;
-}
-
-/* Education Section */
-.education {
+/* Section styling */
+section {
     background-color: white;
     padding: 40px;
     margin: 40px 0;
@@ -85,7 +121,7 @@ header p {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.education h2 {
+section h2 {
     font-size: 2em;
     text-align: center;
     margin-bottom: 20px;
@@ -93,30 +129,13 @@ header p {
     color: #4A90E2;
 }
 
-.education ul {
-    list-style: none;
-}
-
-.education li {
-    font-size: 1.2em;
-    font-weight: 700;
-    margin-top: 20px;
-    color: #333;
-}
-
-.education p {
+section p {
     font-size: 1.1em;
-    margin: 10px 0;
-    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #4A90E2;
-    color: white;
-    width: 100%;
-    font-size: 1em;
-    position: relative;
-}
+    padding: 
