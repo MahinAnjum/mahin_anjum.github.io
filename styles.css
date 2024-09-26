@@ -10,7 +10,6 @@ body {
     background-color: #f7f7f7;
     color: #333;
     line-height: 1.6;
-    padding-bottom: 80px;
 }
 
 .container {
@@ -46,13 +45,25 @@ nav ul li a:hover {
     color: #ffd700;
 }
 
-/* Contact Information */
+/* Profile Section */
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+}
+
 .contact-info {
-    position: absolute;
-    top: 10px;
-    right: 20px;
+    text-align: left;
     font-size: 0.9em;
-    text-align: right;
+    margin-left: 20px;
 }
 
 /* Sections */
@@ -66,16 +77,6 @@ section {
 
 .hidden {
     display: none;
-}
-
-/* Profile Picture */
-.profile-picture img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 5px solid white;
-    object-fit: cover;
-    margin-bottom: 20px;
 }
 
 /* Footer */
