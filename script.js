@@ -1,21 +1,15 @@
-// Function to show the selected section and hide others
+// Updated JavaScript to toggle hidden/show with animations
 function showSection(sectionId) {
     // Hide all sections
     const sections = document.querySelectorAll('section');
     sections.forEach(section => {
+        section.classList.remove('show');
         section.classList.add('hidden');
     });
 
-    // Show the clicked section
-    document.getElementById(sectionId).classList.remove('hidden');
+    // Show the clicked section with fade-in animation
+    const sectionToShow = document.getElementById(sectionId);
+    sectionToShow.classList.remove('hidden');
+    sectionToShow.classList.add('show');
 }
 
-// Smooth Scroll (optional)
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
