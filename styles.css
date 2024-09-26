@@ -1,10 +1,23 @@
-/* Basic styling */
-body {
-    font-family: Arial, sans-serif;
+/* General Styling */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
     color: #333;
+    line-height: 1.6;
+    padding-bottom: 80px; /* To accommodate the footer */
+}
+
+/* Container for layout */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* Header section */
@@ -12,90 +25,99 @@ header {
     background-color: #007BFF;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 50px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #0056b3;
 }
 
 header h1 {
-    margin: 0;
     font-size: 2.5em;
+    margin: 15px 0;
+    font-weight: 700;
 }
 
 header p {
-    margin: 5px 0;
     font-size: 1.2em;
+    font-weight: 500;
+    margin: 10px 0 0;
 }
 
-/* Profile Picture Section */
-.profile-picture {
-    text-align: center;
-    margin-top: 20px;
-}
-
+/* Profile Picture */
 .profile-picture img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+    border: 5px solid white;
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
 }
 
-/* About Me section */
+/* About Me Section */
 .about-me {
-    padding: 20px;
-    background-color: #fff;
-    margin: 20px auto;
-    max-width: 800px;
+    background-color: white;
+    padding: 40px;
+    margin-top: -50px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .about-me h2 {
     font-size: 2em;
-    margin-bottom: 10px;
     text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #007BFF;
 }
 
 .about-me p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin: 10px 0;
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 15px;
 }
 
-/* Education section */
+/* Education Section */
 .education {
-    padding: 20px;
-    background-color: #f4f4f4;
+    background-color: white;
+    padding: 40px;
+    margin: 40px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .education h2 {
-    text-align: center;
     font-size: 2em;
+    text-align: center;
     margin-bottom: 20px;
+    font-weight: 700;
+    color: #007BFF;
 }
 
 .education ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
 }
 
 .education li {
-    font-weight: bold;
-    font-size: 1.3em;
-    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #333;
 }
 
 .education p {
     font-size: 1.1em;
-    margin-left: 20px;
+    margin: 10px 0;
+    color: #555;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #333;
+    padding: 20px;
+    background-color: #007BFF;
     color: white;
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 1em;
 }
