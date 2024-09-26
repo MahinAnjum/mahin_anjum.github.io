@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
             section.classList.add('hidden');  // Add hidden class
         });
 
-        // Get the clicked section and show it with a smooth animation
+        // Get the clicked section and
         const sectionToShow = document.getElementById(sectionId);
         sectionToShow.classList.remove('hidden');
         sectionToShow.classList.add('show');
@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
     navLinks.forEach(link => {
         link.addEventListener('click', function (event) {
             event.preventDefault();  // Prevent default anchor behavior
-
             const sectionId = this.getAttribute('onclick').split('\'')[1];
             showSection(sectionId);
         });
