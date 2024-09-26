@@ -8,6 +8,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Contact Information -->
+    <div class="contact-info">
+        <p><strong>Address:</strong> House No: 9/A, Circular Road, Kalabagan, Dhaka-1205</p>
+        <p><strong>Phone:</strong> 01974036789, 01601212792</p>
+        <p><strong>Email:</strong> <a href="mailto:1806017@eee.buet.ac.bd">1806017@eee.buet.ac.bd</a>, <a href="mailto:mahinanjum558@gmail.com">mahinanjum558@gmail.com</a></p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#thesis">Thesis</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <header>
         <div class="container">
             <div class="profile-picture">
@@ -18,7 +38,7 @@
         </div>
     </header>
 
-    <section class="about-me container">
+    <section id="about-me" class="about-me container">
         <h2>About Me</h2>
         <p>I am an undergraduate student at the Bangladesh University of Engineering and Technology (BUET), 
         pursuing a degree in Electrical and Electronic Engineering with a major in Electronics. My primary 
@@ -26,13 +46,14 @@
 
         <p>Currently, my research focuses on the <strong>Advancements in MM-Wave LNA Design</strong>: optimizing 
         performance through <strong>Modified DS and Post-Linearization Techniques at 26GHz</strong>. This work is being 
-        carried out under the supervision of <strong>Prof. Dr. Apratim Roy</strong>.</p>
+        carried out under the supervision of <strong>Prof. Dr. Mahbub Alam</strong>.</p>
 
         <p>Additionally, I have conducted my undergraduate thesis on <strong>MM-Wave Circuit Design</strong> under the 
         guidance of <strong>Dr. Apratim Roy</strong>, Professor at BUET.</p>
     </section>
 
-    <section class="education container">
+    <!-- Education Section -->
+    <section id="education" class="education container">
         <h2>Education</h2>
         <ul>
             <li><strong>B.Sc. in Electrical & Electronic Engineering</strong></li>
@@ -47,8 +68,38 @@
         </ul>
     </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="skills container">
+        <h2>Skills</h2>
+        <p>Placeholder for skills content. You can add technical and soft skills here.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects container">
+        <h2>Projects</h2>
+        <p>Placeholder for projects content. You can showcase your projects here.</p>
+    </section>
+
+    <!-- Thesis Section -->
+    <section id="thesis" class="thesis container">
+        <h2>Thesis</h2>
+        <p>Placeholder for thesis content. Add information about your thesis work and research here.</p>
+    </section>
+
     <footer>
         <p>© 2024 Mahin Anjum</p>
     </footer>
+
+    <script>
+        // Smooth scroll for the navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
