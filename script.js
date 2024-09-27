@@ -1,3 +1,7 @@
+
+### Full JavaScript (`script.js`):
+
+```javascript
 // Show the selected section and hide others
 function showSection(sectionId) {
     const sections = document.querySelectorAll('section');
