@@ -12,12 +12,6 @@ body {
     line-height: 1.6;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 /* Navigation Bar */
 nav {
     background-color: #2C3E50;
@@ -60,13 +54,16 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+.profile-picture {
+    margin-bottom: 10px;
+}
+
 .profile-picture img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 10px;
 }
 
 .contact-info {
@@ -104,23 +101,4 @@ nav ul li a:hover {
 
 /* Sections */
 section {
-    background-color: white;
-    padding: 40px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    margin-bottom: 20px;
-}
-
-/* Hidden sections */
-.hidden {
-    display: none;
-}
-
-/* Show active section */
-.show {
-    display: block;
-}
+    background
