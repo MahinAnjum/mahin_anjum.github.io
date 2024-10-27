@@ -23,7 +23,7 @@ nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    type: disc;
+    type: circle;
 }
 
 nav ul li {
