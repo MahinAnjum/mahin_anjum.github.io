@@ -70,6 +70,7 @@ section.hidden {
 
 section.show {
     display: block;
+    align: center;
 }
 
 /* Download Button */
