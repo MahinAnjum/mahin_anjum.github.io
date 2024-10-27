@@ -1,7 +1,8 @@
 // Show the selected section and hide others
 function showSection(sectionId) {
-    const sections = document.querySelectorAll('section');
-    sections.forEach(section => section.classList.add('hidden'));
+    document.querySelectorAll('section').forEach(section => {
+        section.classList.add('hidden');
+    });
     document.getElementById(sectionId).classList.remove('hidden');
 }
 
@@ -14,3 +15,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
+// Show About section by default on page load
+document.addEventListener('DOMContentLoaded', () => {
+    showSection('about');
+});
